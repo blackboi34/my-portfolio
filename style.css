@@ -1,0 +1,395 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Garamond', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #0073e6, #005bb5);
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.2em;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #333;
+    padding: 1em 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #005bb5;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #005bb5;
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+#contact a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+/* Active Navbar Link */
+.navbar ul li a.active {
+    background: #005bb5;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+}
+
+.contact-form button {
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #005bb5;
+}
+
+/* About Me Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #0073e6;
+}
+
+#about p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+#about h3 {
+    color: #0073e6;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+    padding-bottom: 0.2em;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    background-color: #e6f7ff;
+    border: 1px solid #cceeff;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+#about ul li:hover {
+    background-color: #cceeff;
+    border-color: #99ddff;
+}
+
+/* Icons for Visual Appeal */
+#about ul li::before {
+    content: '✓';
+    color: #0073e6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Add spacing */
+.container {
+    margin-bottom: 2em;
+}
+
+/* About Me Content */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.about-content .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #0073e6;
+}
+
+.about-content .about-text {
+    flex: 1;
+    color: #333;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f9f9f9;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #0073e6;
+}
+
+.project {
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #0073e6;
+    display: inline-block;
+    padding-bottom: 0.2em;
+}
+
+.project p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Video Styling */
+video {
+    display: block;
+    margin: 1em 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    display: block;
+    width: 50%; /* Adjusted width for smaller images */
+    height: auto;
+    margin: 1em; /* Add space between images */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects for Media */
+.project-img:hover {
+    border-color: #0073e6;
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Grid Layout for 2x2 Images */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2%; /* Adjust spacing between images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #about p, .project p {
+        font-size: 1em;
+    }
+
+    /* Adjust image sizes */
+    .project-img {
+        width: 45%; /* Adjust image size slightly on smaller screens */
+    }
+
+    /* Adjust contact form input width */
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    /* Adjust grid for smaller screens */
+    .project-images {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 1.5em;
+    }
+}
